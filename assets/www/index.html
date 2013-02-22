@@ -35,6 +35,7 @@
 
     <script type="text/javascript">
         function openPdf(linea){
+        	Lungo.Notification.show();
             window
                 .plugins
                     .Asset2SD
@@ -43,6 +44,7 @@
                                 , destination_file: '/'+linea+'.pdf'},
                                     function() { window.plugins.pdfViewer.showPdf('/mnt/sdcard/horarios_evhsa/'+linea+'.pdf');},
                                         function() { alert('ERROR'); });
+            
         }
             
     </script>
@@ -103,7 +105,7 @@
                     </a>
                 </li>
                 <li data-icon="info" class="accept">
-                    <a href="#" onclick="openPdf('502');">
+                    <a href="#" onclick="openPdf('500');">
                     <strong>500</strong>
                     <br>
                     Terminal - G. Rojo - Conesa
