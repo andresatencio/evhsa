@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>evhsa</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+
+
+    <!-- Lungo - Stylesheets -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+    <style type="text/css">
+    </style>
+
+     <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8" src="pdfviewer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="downloader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Asset2SD.js"></script>
+
+    <script type="text/javascript">
+        function openPdf(linea){
+            window
+                .plugins
+                    .Asset2SD
+                        .startActivity({asset_file: 'www/pdf/'+linea+'.pdf'
+                            , destination_file_location: 'horarios_evhsa'
+                                , destination_file: '/'+linea+'.pdf'},
+                                    function() { window.plugins.pdfViewer.showPdf('/mnt/sdcard/horarios_evhsa/'+linea+'.pdf');},
+                                        function() { alert('ERROR'); });
+        }
+            
+    </script>
+    <!-- Lungo - Sandbox App -->
+    
+
+</head>
+
+<body class="app">
+
+
+    <section id="maine" data-transition="slide">
+        <header  class="accept">
+            <nav class="right box">
+                <a href="#quien" data-router="section" data-icon="user"></a>
+            </nav>
+            <div class="centered title with-subtitle">
+                evhsa
+                
+            </div>
+        </header>
+
+        <article id="main-article" class="active list indented scroll">
+            <ul>
+                <li class="dark">
+                    <strong>
+                        Lineas
+                    </strong>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('227-230');">
+                    <strong>227/230</strong>
+                    <br>
+                    San nicolas-Conesa-Pergamino
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('342-a-b');">
+                    <strong>342 A y B</strong>
+                    <br>
+                    T. San Nicolas - Ramallo//
+                    T. San Nicolas - G. Castro - San Pedro
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('342-c);">
+                    <strong>342 C</strong>
+                    <br>
+                    Sanchez - Ramallo - Paraiso
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('374-502');">
+                    <strong>374/502</strong>
+                    <br>
+                    Parador - Golf - Siderar C.//
+                    Floresta - Golf - Siderar C.
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('502');">
+                    <strong>500</strong>
+                    <br>
+                    Terminal - G. Rojo - Conesa
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('501');">
+                    <strong>501</strong>
+                    <br>
+                    B. 25 de Mayo- B. Somisa
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('503');">
+                    <strong>503</strong>
+                    <br>
+                    Arroyo del Medio - B. 7 de Septiembre
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('504');">
+                    <strong>504</strong>
+                    <br>
+                    B. Suizo - B. Santa Rosa
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('505');">
+                    <strong>505</strong>
+                    <br>
+                    Las Viñas - B. Fraga
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('506');">
+                    <strong>506</strong>
+                    <br>
+                    B. 12 de Marzo - B. Fonavi
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('507');">
+                    <strong>507</strong>
+                    <br>
+                    B. San Jorge - California - Sandrina
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('510');">
+                    <strong>510</strong>
+                    <br>
+                    Parador - S. Francisco - Guemes - Golf Shell
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('512');">
+                    <strong>512</strong>
+                    <br>
+                    Los Fresnos - La Emilia
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('520-a-b-522');">
+                    <strong>520 A y B - 522</strong>
+                    <br>
+                    G. Castro - Transfer/Sta. Lucia - Transfer Rio Tala - Transfer
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('521');">
+                    <strong>521</strong>
+                    <br>
+                    Esc. 10 - Cassini - Cementerio - Canaletas
+                    </a>
+                </li>
+                <li data-icon="info" class="accept">
+                    <a href="#" onclick="openPdf('524');">
+                    <strong>524</strong>
+                    <br>
+                    Sector Transfer - V. Obligado
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+
+
+
+    <section id="quien" data-transition="slide">
+        <header data-title="Autor" class="green">
+            <nav class="left box">
+                <a href="#back" data-router="section" data-icon="left"></a>
+            </nav>
+        </header>
+        <article class="active list indented scroll">
+            <ul>
+                <li class="cancel">
+                    <strong>Andres Atencio</strong>
+                    <p>and.atencio@gmail.com</p>
+                    <p>www.andresatencio.com.ar</p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Lungo - Dependencies -->
+   <script>
+        Lungo.init({
+            name: 'prueba'
+        });
+
+    </script>
+</body>
+</html>
